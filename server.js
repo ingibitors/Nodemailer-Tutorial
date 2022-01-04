@@ -14,10 +14,14 @@ app.use(cors({ origin: "*" }));
 app.use("/public", express.static(process.cwd() + "/public")); //make public static
 
 const transporter = nodemailer.createTransport({
-  service: "hotmail",
+  host: `smtp.gmail.com`, //replace with your email provider
+  port: 587,
+
   auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASS,
+    /*user: process.env.EMAIL,
+    pass: process.env.PASS,*/
+    user: `ingibitors@gmail.com`,
+    pass: `971176_l`
   },
 });
 
@@ -41,7 +45,7 @@ app.post("/send", (req, res) => {
     console.log(data);
     const mail = {
       sender: `${data.name} <${data.email}>`,
-      to: process.env.EMAIL, // receiver email,
+      to: "ingibitors@gmail.com", // receiver email,
       subject: data.subject,
       text: `${data.name} <${data.email}> \n${data.message}`,
     };
