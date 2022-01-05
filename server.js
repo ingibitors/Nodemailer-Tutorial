@@ -14,14 +14,12 @@ app.use(cors({ origin: "*" }));
 app.use("/public", express.static(process.cwd() + "/public")); //make public static
 
 const transporter = nodemailer.createTransport({
-  host: `smtp.gmail.com`, //replace with your email provider
-  port: 587,
-
+  host: `smtp.ukr.net`, //replace with your email provider
+  port: 465,
+  secure: true,
   auth: {
-    /*user: process.env.EMAIL,
-    pass: process.env.PASS,*/
-    user: `xxx@gmail.com`,
-    pass: `xxxx`
+    user: `leader_i@ukr.net`,
+    pass: `B2QypG6JVPjzNmNk`
   },
 });
 
@@ -44,10 +42,14 @@ app.post("/send", (req, res) => {
     });
     console.log(data);
     const mail = {
-      sender: `${data.name} <${data.email}>`,
-      to: "ingibitors@gmail.com", // receiver email,
+      from:'leader_i@ukr.net',
+      /*from: `${data.name} <${data.email}>`,*/
+      to: `<${data.email}>`, // receiver email,
       subject: data.subject,
-      text: `${data.name} <${data.email}> \n${data.message}`,
+      html:`
+<h1>${data.name} ${data.email} ${data.message}</h1>
+<p>and we have a p</p>
+`
     };
     transporter.sendMail(mail, (err, data) => {
       if (err) {
