@@ -16,7 +16,7 @@
     <div class="container">
       <h1 style="margin-top: 2em;">Форма запиту на прорахунок вартості обладнання</h1>
       <p>
-        В формі потрібно заповнити необхідні данні. Інструкцію по данним можна знайти:
+        В формі потрібно заповнити необхідні дані. Інструкцію по данним можна знайти:
         <a href="https://www.schindler.com/ua/internet/uk/home.html">Schindler</a>
       </p>
       <div class="row">
@@ -59,24 +59,1594 @@
                 </div>
               </div>
               <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="object_latin">Назва об`єкта латинськими літерами:</label>
                 <input
-                  placeholder="Тема"
-                  id="subject"
-                  name="subject"
+                  placeholder="Назва об`єкта латинськими літерами"
+                  id="object_latin"
+                  name="object_latin"
                   type="text"
                   class="form-control"
                   required
                 />
               </div>
+
+              <div class="col-md-6">
+                <label for="object_cyrylic">Назва об`єкта кирилецею:</label>
+                <input
+                        placeholder="Назва об`єкта кирилецею"
+                        id="object_cyrylic"
+                        name="object_cyrylic"
+                        type="text"
+                        class="form-control"
+                        required
+                />
+              </div>
+                </div>
+              </div>
               <div class="form-group">
-                <textarea
-                  placeholder="Повідомлення"
-                  id="message"
-                  name="message"
-                  class="form-control"
-                  rows="3"
-                  required
-                ></textarea>
+                <label for="object_adress">Адреса об`єкта:</label>
+                 <input
+                      placeholder="Адреса об`єкта"
+                      id="object_adress"
+                      name="object_adress"
+                      type="text"
+                      class="form-control"
+                      required
+              />
+              </div>
+              <div class="form-group">
+
+                <div class="col-md-3">
+                  <label for="Product">Product:</label>
+                  <select
+                          class="form-control"
+                          name="Product"
+                          id="Product"
+                          aria-label="Default select example">
+                    <option value="Schindler 3300 Elevator" selected>Schindler 3300 Elevator</option>
+                    <option value="Schindler 3100 Elevator" >Schindler 3100 Elevator</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="Product_Application">Product Application:</label>
+                  <select
+                          class="form-control"
+                          name="Product_Application"
+                          id="Product_Application"
+                          aria-label="Default select example">
+                    <option value="Basic" >Basic</option>
+                    <option value="Standard" selected>Standard</option>
+                    <option value="Standard Low Headroom" disabled>Standard Low Headroom</option>
+                    <option value="Flexible" disabled>Flexible</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="EN81_70_Relevance">EN81-70 Relevance:</label>
+                  <select
+                          class="form-control"
+                          name="EN81_70_Relevance"
+                          id="EN81_70_Relevance"
+                          aria-label="Default select example">
+                    <option value="No" selected>No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="Elevator_model">Elevator model:</label>
+                  <select
+                          class="form-control"
+                          name="Elevator_model"
+                          id="Elevator_model"
+                          aria-label="Default select example">
+                    <option value="GQ 450 BK1000 TK1000 T2 BT750" >GQ 450 BK1000 TK1000 T2 BT750</option>
+                    <option value="GQ 400 BK1000 TK1100 T2 BT750" selected >GQ 400 BK1000 TK1100 T2 BT750</option>
+                    <option value="GQ 535 BK1050 TK1250 T2 BT800" >GQ 535 BK1050 TK1250 T2 BT800</option>
+                    <option value="GQ 535 BK1050 TK1300 T2 BT800" >GQ 535 BK1050 TK1300 T2 BT800</option>
+                    <option value="GQ 625 BK1200 TK1250 T2 BT900" >GQ 625 BK1200 TK1250 T2 BT900</option>
+                    <option value="GQ 625 BK1200 TK1300 T2 BT900" >GQ 625 BK1200 TK1300 T2 BT900</option>
+                    <option value="GQ 675 BK1200 TK1400 T2 BT800" >GQ 675 BK1200 TK1400 T2 BT800</option>
+                    <option value="GQ 675 BK1200 TK1400 T2 BT900" >GQ 675 BK1200 TK1400 T2 BT900</option>
+                    <option value="GQ 1125 BK1200 TK2100 T2 BT900" >GQ 1125 BK1200 TK2100 T2 BT900</option>
+                    <option value="GQ 675 BK1200 TK1400 C2 BT800" >GQ 675 BK1200 TK1400 C2 BT800</option>
+                    <option value="GQ 675 BK1200 TK1400 C2 BT900" >GQ 675 BK1200 TK1400 C2 BT900</option>
+                    <option value="GQ 800 BK1400 TK1400 C2 BT800" >GQ 800 BK1400 TK1400 C2 BT800</option>
+                    <option value="GQ 800 BK1400 TK1400 C2 BT900" >GQ 800 BK1400 TK1400 C2 BT900</option>
+                    <option value="GQ 900 BK1400 TK1500 C2 BT900" >GQ 900 BK1400 TK1500 C2 BT900</option>>
+                    <option value="GQ 1000 BK1600 TK1400 C2 BT900" >GQ 1000 BK1600 TK1400 C2 BT900</option>
+                  </select>
+                </div>
+                <div class="col-md-12" id="picture_div">
+
+                </div>
+                <div class="col-md-2">
+                  <label for="Rated_speed_VKN">Rated speed (VKN):</label>
+                  <select
+                          class="form-control"
+                          name="Rated_speed_VKN"
+                          id="Rated_speed_VKN"
+                          aria-label="Default select example">
+                    <option value="1.0" selected>1.0</option>
+                    <option value="1.6">1.6</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="Number_of_access_sides">Number of access sides:</label>
+                  <select
+                          class="form-control"
+                          name="Number_of_access_sides"
+                          id="Number_of_access_sides"
+                          aria-label="Default select example">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="Number_of_stops_ZE">Number of stops (ZE):</label>
+                  <select
+                          class="form-control"
+                          name="Number_of_stops_ZE"
+                          id="Number_of_stops_ZE"
+                          aria-label="Default select example">
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+                    <option value="7" >7</option>
+                    <option value="8" >8</option>
+                    <option value="9" >9</option>
+                    <option value="10" >10</option>
+                    <option value="11" >11</option>
+                    <option value="12" >12</option>
+                    <option value="13" >13</option>
+                    <option value="14" >14</option>
+                    <option value="15" >15</option>
+                    <option value="16" >16</option>
+                    <option value="17" >17</option>
+                    <option value="18" >18</option>
+                    <option value="19" >19</option>
+                    <option value="20" >20</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="Control_system">Control system:</label>
+                  <select
+                          class="form-control"
+                          name="Control_system"
+                          id="Control_system"
+                          aria-label="Default select example">
+                    <option value="1PI" >1PI</option>
+                    <option value="1KA">1KA</option>
+                    <option value="1KS">1KS</option>
+                    <option value="2PI">2PI</option>
+                    <option value="2KA">2KA</option>
+                    <option value="2KS">2KS</option>
+                    <option value="3KS">3KS</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="Designation_within_group">Designation within group:</label>
+                  <select
+                          class="form-control"
+                          name="Designation_within_group"
+                          id="Designation_within_group"
+                          aria-label="Default select example"
+                          disabled
+                  >
+
+                    <option value="Elevator A" >Elevator A</option>
+                    <option value="Elevator B">Elevator B</option>
+                    <option value="Elevator C">Elevator C</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="Unequeal_nb_floors_at_hoistway">Unequeal nb floors at hoistway :</label>
+                  <select
+                          class="form-control"
+                          name="Unequeal_nb_floors_at_hoistway"
+                          id="Unequeal_nb_floors_at_hoistway"
+                          aria-label="Default select example"
+                          disabled
+
+                  >
+                    <option value="No" >No</option>
+                    <option value="Yes" >Yes</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="Num_of_stops_served_by_group">Num. of stops served by group (2 - 35) :</label>
+                  <select
+                          class="form-control"
+                          name="Num_of_stops_served_by_group"
+                          id="Num_of_stops_served_by_group"
+                          aria-label="Default select example"
+                          disabled
+
+                  >
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+                    <option value="7" >7</option>
+                    <option value="8" >8</option>
+                    <option value="9" >9</option>
+                    <option value="10" >10</option>
+                    <option value="11" >11</option>
+                    <option value="12" >12</option>
+                    <option value="13" >13</option>
+                    <option value="14" >14</option>
+                    <option value="15" >15</option>
+                    <option value="16" >16</option>
+                    <option value="17" >17</option>
+                    <option value="18" >18</option>
+                    <option value="19" >19</option>
+                    <option value="20" >20</option>
+                  </select>
+                </div>
+
+                <div class="col-md-12" id="Group_stops_NOT_served_by_lift" style="display: none">
+                  <p>Group stops NOT served by lift:</p>
+                  <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox" value="1.1"
+                          id="Group_stops_NOT_served_by_lift_1_1"
+                          name="Group_stops_NOT_served_by_lift_1_1"
+                  >
+                  <label class="form-check-label" for="Group_stops_NOT_served_by_lift_1_1">
+                    1.1
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="2.1"
+                            id="Group_stops_NOT_served_by_lift_2_1"
+                            name="Group_stops_NOT_served_by_lift_2_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_2_1">
+                      2.1
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="3.1"
+                            id="Group_stops_NOT_served_by_lift_3_1"
+                            name="Group_stops_NOT_served_by_lift_3_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_3_1">
+                      3.1
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="4.1"
+                            id="Group_stops_NOT_served_by_lift_4_1"
+                            name="Group_stops_NOT_served_by_lift_4_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_4_1">
+                      4.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="5.1"
+                          id="Group_stops_NOT_served_by_lift_5_1"
+                          name="Group_stops_NOT_served_by_lift_5_1"
+                  >
+                  <label class="form-check-label" for="Group_stops_NOT_served_by_lift_5_1">
+                    5.1
+                  </label>
+                </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="6.1"
+                            id="Group_stops_NOT_served_by_lift_6_1"
+                            name="Group_stops_NOT_served_by_lift_6_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_6_1">
+                      6.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="7.1"
+                            id="Group_stops_NOT_served_by_lift_7_1"
+                            name="Group_stops_NOT_served_by_lift_7_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_7_1">
+                      7.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="8.1"
+                            id="Group_stops_NOT_served_by_lift_8_1"
+                            name="Group_stops_NOT_served_by_lift_8_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_8_1">
+                      8.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="9.1"
+                            id="Group_stops_NOT_served_by_lift_9_1"
+                            name="Group_stops_NOT_served_by_lift_9_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_9_1">
+                      9.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="10.1"
+                          id="Group_stops_NOT_served_by_lift_10_1"
+                          name="Group_stops_NOT_served_by_lift_10_1"
+                  >
+                  <label class="form-check-label" for="Group_stops_NOT_served_by_lift_10_1">
+                    10.1
+                  </label>
+                </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="11.1"
+                            id="Group_stops_NOT_served_by_lift_11_1"
+                            name="Group_stops_NOT_served_by_lift_11_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_11_1">
+                      11.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="12.1"
+                            id="Group_stops_NOT_served_by_lift_12_1"
+                            name="Group_stops_NOT_served_by_lift_12_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_20_1">
+                      12.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="13.1"
+                            id="Group_stops_NOT_served_by_lift_13_1"
+                            name="Group_stops_NOT_served_by_lift_13_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_13_1">
+                      13.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="14.1"
+                            id="Group_stops_NOT_served_by_lift_14_1"
+                            name="Group_stops_NOT_served_by_lift_14_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_14_1">
+                      14.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="15.1"
+                            id="Group_stops_NOT_served_by_lift_15_1"
+                            name="Group_stops_NOT_served_by_lift_15_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_15_1">
+                      15.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="16.1"
+                            id="Group_stops_NOT_served_by_lift_16_1"
+                            name="Group_stops_NOT_served_by_lift_16_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_16_1">
+                      16.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="17.1"
+                            id="Group_stops_NOT_served_by_lift_17_1"
+                            name="Group_stops_NOT_served_by_lift_17_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_17_1">
+                      17.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="18.1"
+                            id="Group_stops_NOT_served_by_lift_18_1"
+                            name="Group_stops_NOT_served_by_lift_18_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_18_1">
+                      18.1
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="19.1"
+                            id="Group_stops_NOT_served_by_lift_19_1"
+                            name="Group_stops_NOT_served_by_lift_19_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_19_1">
+                      19.1
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="20.1"
+                            id="Group_stops_NOT_served_by_lift_20_1"
+                            name="Group_stops_NOT_served_by_lift_20_1"
+                    >
+                    <label class="form-check-label" for="Group_stops_NOT_served_by_lift_20_1">
+                      20.1
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="Commission_number_of_lift_A">Commission number of lift A:</label>
+                <input
+                        placeholder="UKR"
+                        id="Commission_number_of_lift_A"
+                        name="Commission_number_of_lift_A"
+                        type="text"
+                        class="form-control"
+                        required
+                        disabled
+                />
+              </div>
+
+              <div class="col-md-3">
+                <label for="Dispo_layout_for_group_elevator">Dispo layout for group elevator:</label>
+                <select
+                        class="form-control"
+                        name="Dispo_layout_for_group_elevator"
+                        id="Dispo_layout_for_group_elevator"
+                        aria-label="Default select example"
+                        disabled
+                >
+                  <option value="Attached" >Attached </option>
+                  <option value="Opposited" >Opposited</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="Height_door_HT">Height door HT:</label>
+                <select
+                        class="form-control"
+                        name="Height_door_HT"
+                        id="Height_door_HT"
+                        aria-label="Default select example">
+                  <option value="2,000" >2,000 </option>
+                  <option value="2,100" >2,100</option>
+                  <option value="2,300" >2,300</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label for="Car_height_HK">Car height HK:</label>
+                <select
+                        class="form-control"
+                        name="Car_height_HK"
+                        id="Car_height_HK"
+                        aria-label="Default select example">
+                  <option value="2,139" >2,139 </option>
+                  <option value="2,239" >2,239</option>
+                  <option value="2,339" >2,339</option>
+                </select>
+              </div>
+              <hr>
+              <div class="col-md-12" id="Landing_ident_served_stops-1-side">
+              <p>Landing ident. (served stops):</p>
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox" value="1.1"
+                        id="Landing_ident_served_stops_1_1"
+                        name="Landing_ident_served_stops_1_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_1_1">
+                  1.1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="2.1"
+                        id="Landing_ident_served_stops_2_1"
+                        name="Landing_ident_served_stops_2_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_2_1">
+                  2.1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="3.1"
+                        id="Landing_ident_served_stops_3_1"
+                        name="Landing_ident_served_stops_3_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_3_1">
+                  3.1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="4.1"
+                        id="Landing_ident_served_stops_4_1"
+                        name="Landing_ident_served_stops_4_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_4_1">
+                  4.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="5.1"
+                        id="Landing_ident_served_stops_5_1"
+                        name="Landing_ident_served_stops_5_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_5_1">
+                  5.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="6.1"
+                        id="Landing_ident_served_stops_6_1"
+                        name="Landing_ident_served_stops_6_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_6_1">
+                  6.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="7.1"
+                        id="Landing_ident_served_stops_7_1"
+                        name="Landing_ident_served_stops_7_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_7_1">
+                  7.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="8.1"
+                        id="Landing_ident_served_stops_8_1"
+                        name="Landing_ident_served_stops_8_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_8_1">
+                  8.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="9.1"
+                        id="Landing_ident_served_stops_9_1"
+                        name="Landing_ident_served_stops_9_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_9_1">
+                  9.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="10.1"
+                        id="Landing_ident_served_stops_10_1"
+                        name="Landing_ident_served_stops_10_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_10_1">
+                  10.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="11.1"
+                        id="Landing_ident_served_stops_11_1"
+                        name="Landing_ident_served_stops_11_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_11_1">
+                  11.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="12.1"
+                        id="Landing_ident_served_stops_12_1"
+                        name="Landing_ident_served_stops_12_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_20_1">
+                  12.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="13.1"
+                        id="Landing_ident_served_stops_13_1"
+                        name="Landing_ident_served_stops_13_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_13_1">
+                  13.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="14.1"
+                        id="Landing_ident_served_stops_14_1"
+                        name="Landing_ident_served_stops_14_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_14_1">
+                  14.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="15.1"
+                        id="Landing_ident_served_stops_15_1"
+                        name="Landing_ident_served_stops_15_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_15_1">
+                  15.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="16.1"
+                        id="Landing_ident_served_stops_16_1"
+                        name="Landing_ident_served_stops_16_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_16_1">
+                  16.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="17.1"
+                        id="Landing_ident_served_stops_17_1"
+                        name="Landing_ident_served_stops_17_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_17_1">
+                  17.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="18.1"
+                        id="Landing_ident_served_stops_18_1"
+                        name="Landing_ident_served_stops_18_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_18_1">
+                  18.1
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="19.1"
+                        id="Landing_ident_served_stops_19_1"
+                        name="Landing_ident_served_stops_19_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_19_1">
+                  19.1
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="20.1"
+                        id="Landing_ident_served_stops_20_1"
+                        name="Landing_ident_served_stops_20_1"
+                >
+                <label class="form-check-label" for="Landing_ident_served_stops_20_1">
+                  20.1
+                </label>
+              </div>
+
+            </div>
+              <div class="col-md-12" id="Landing_ident_served_stops-2-side">
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox" value="1.2"
+                          id="Landing_ident_served_stops_1_2"
+                          name="Landing_ident_served_stops_1_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_1_2">
+                    1.2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="2.2"
+                          id="Landing_ident_served_stops_2_2"
+                          name="Landing_ident_served_stops_2_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_2_2">
+                    2.2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="3.2"
+                          id="Landing_ident_served_stops_3_2"
+                          name="Landing_ident_served_stops_3_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_3_2">
+                    3.2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="4.2"
+                          id="Landing_ident_served_stops_4_2"
+                          name="Landing_ident_served_stops_4_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_4_2">
+                    4.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="5.1"
+                          id="Landing_ident_served_stops_5_2"
+                          name="Landing_ident_served_stops_5_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_5_2">
+                    5.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="6.1"
+                          id="Landing_ident_served_stops_6_2"
+                          name="Landing_ident_served_stops_6_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_6_2">
+                    6.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="7.2"
+                          id="Landing_ident_served_stops_7_2"
+                          name="Landing_ident_served_stops_7_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_7_2">
+                    7.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="8.2"
+                          id="Landing_ident_served_stops_8_2"
+                          name="Landing_ident_served_stops_8_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_8_2">
+                    8.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="9.2"
+                          id="Landing_ident_served_stops_9_2"
+                          name="Landing_ident_served_stops_9_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_9_2">
+                    9.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="10.2"
+                          id="Landing_ident_served_stops_10_2"
+                          name="Landing_ident_served_stops_10_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_10_2">
+                    10.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="11.2"
+                          id="Landing_ident_served_stops_11_2"
+                          name="Landing_ident_served_stops_11_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_11_2">
+                    11.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="12.2"
+                          id="Landing_ident_served_stops_12_2"
+                          name="Landing_ident_served_stops_12_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_20_2">
+                    12.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="13.2"
+                          id="Landing_ident_served_stops_13_2"
+                          name="Landing_ident_served_stops_13_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_13_2">
+                    13.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="14.2"
+                          id="Landing_ident_served_stops_14_2"
+                          name="Landing_ident_served_stops_14_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_14_2">
+                    14.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="15.2"
+                          id="Landing_ident_served_stops_15_2"
+                          name="Landing_ident_served_stops_15_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_15_2">
+                    15.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="16.2"
+                          id="Landing_ident_served_stops_16_2"
+                          name="Landing_ident_served_stops_16_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_16_2">
+                    16.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="17.2"
+                          id="Landing_ident_served_stops_17_2"
+                          name="Landing_ident_served_stops_17_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_17_2">
+                    17.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="18.2"
+                          id="Landing_ident_served_stops_18_2"
+                          name="Landing_ident_served_stops_18_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_18_2">
+                    18.2
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="19.2"
+                          id="Landing_ident_served_stops_19_2"
+                          name="Landing_ident_served_stops_19_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_19_2">
+                    19.2
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="20.2"
+                          id="Landing_ident_served_stops_20_2"
+                          name="Landing_ident_served_stops_20_2"
+                  >
+                  <label class="form-check-label" for="Landing_ident_served_stops_20_2">
+                    20.2
+                  </label>
+                </div>
+
+                <div class="col-md-2">
+                  <label for="Main_stop_access">Main stop access:</label>
+                  <select
+                          class="form-control"
+                          name="Main_stop_access"
+                          id="Main_stop_access"
+                          aria-label="Default select example">
+                    <option value="1.1" >1.1.</option>
+                    <option value="1.2" >1.2</option>
+                    <option value="2.1" >2.1</option>
+                    <option value="2.2" >2.2</option>
+                    <option value="3.1" >3.1</option>
+                    <option value="3.2" >3.2</option>
+                    <option value="4.1" >4.1</option>
+                    <option value="4.2" >4.2</option>
+                    <option value="5.1" >5.1</option>
+                    <option value="5.2" >5.2</option>
+                    <option value="6.1" >6.1</option>
+                    <option value="6.2" >6.2</option>
+                    <option value="7.1" >7.1</option>
+                    <option value="7.2" >7.2</option>
+                    <option value="8.1" >8.1</option>
+                    <option value="8.2" >8.2</option>
+                    <option value="9.1" >9.1</option>
+                    <option value="10.1" >10.1</option>>
+                    <option value="10.2" >10.2</option>>
+                    <option value="11.1" >11.1</option>>
+                    <option value="11.2" >11.2</option>>
+                    <option value="12.1" >12.1</option>>
+                    <option value="12.2" >12.2</option>>
+                    <option value="13.1" >13.1</option>>
+                    <option value="13.2" >13.2</option>>
+                    <option value="14.1" >14.1</option>>
+                    <option value="14.2" >14.2</option>>
+                    <option value="15.1" >15.1</option>>
+                    <option value="15.2" >15.2</option>>
+                    <option value="16.1" >16.1</option>>
+                    <option value="16.2" >16.2</option>>
+                    <option value="17.1" >17.1</option>>
+                    <option value="17.2" >17.2</option>>
+                    <option value="18.1" >18.1</option>>
+                    <option value="18.2" >18.2</option>>
+                    <option value="19.1" >19.1</option>>
+                    <option value="19.2" >19.2</option>>
+                    <option value="20.1" >20.1</option>>
+                    <option value="20.2" >20.2</option>>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="Safety_gear_at_counterweight">Safety gear at counterweight:</label>
+                  <select
+                          class="form-control"
+                          name="Safety_gear_at_counterweight"
+                          id="Safety_gear_at_counterweight"
+                          aria-label="Default select example">
+                    <option value="No" selected>No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="Elevation_lowest_group_stop">Elevation lowest (group) stop, FFL)</label>
+                  <input
+                          placeholder="+0.000"
+                          id="Elevation_lowest_group_stop"
+                          name="Elevation_lowest_group_stop"
+                          type="text"
+                          class="form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-3">
+                <label for="Door_opening_direction">Door opening direction:</label>
+                <select
+                        class="form-control"
+                        name="Door_opening_direction"
+                        id="Door_opening_direction"
+                        aria-label="Default select example">
+                  <option value="Telescopic left" >Telescopic left</option>
+                  <option value="Telescopic right" >Telescopic right</option>
+                  <option value="Center" >Center</option>
+                </select>
+              </div>
+
+                <div class="col-md-3">
+                <label for="H_frontwall_to_H_l_sill_TSW">H-frontwall to H-l-sill TSW:</label>
+                <select
+                        class="form-control"
+                        name="H_frontwall_to_H_l_sill_TSW"
+                        id="H_frontwall_to_H_l_sill_TSW"
+                        aria-label="Default select example">
+                  <option value="115 mm. - Wall mounted" >115 mm. - Wall mounted</option>
+                  <option value="75 mm " >75 mm </option>
+                  <option value="35 mm. - Recessed mounted" >35 mm. - Recessed mounted</option>
+                </select>
+              </div>
+
+                <div class="col-md-2">
+                  <label for="Common_hoistway">Common hoistway:</label>
+                  <select
+                          class="form-control"
+                          name="Common_hoistway"
+                          id="Common_hoistway"
+                          aria-label="Default select example">
+                    <option value="No" selected>No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="Distance_between_shafts_mm">Distance between shafts, mm:</label>
+                  <input
+                          placeholder="0"
+                          id="Distance_between_shafts_mm"
+                          name="Distance_between_shafts_mm"
+                          type="text"
+                          class="form-control"
+                          disabled
+                          required
+                  />
+                </div>
+
+                <div class="col-md-3">
+                  <label for="Well_Slab">Well Slab:</label>
+                  <select
+                          class="form-control"
+                          name="Well_Slab"
+                          id="Well_Slab"
+                          aria-label="Default select example">
+                    <option value="Transversal_beam_IPN_140" selected>Transversal beam IPN 140</option>
+                    <option value="Hoisting hooks">Hoisting hooks</option>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="Dist_hoistway1_door_sill_TSW">Dist hoistway1-door sill (TSW):</label>
+                  <select
+                          class="form-control"
+                          name="Dist_hoistway1_door_sill_TSW"
+                          id="Dist_hoistway1_door_sill_TSW"
+                          aria-label="Default select example"
+                          disabled
+
+                  >
+                    <option value="115 mm. - Wall mounted" >115 mm. - Wall mounted for T2</option>
+                    <option value="75 mm " >75 mm  - Wall mounted for C2( Recessed for T2) </option>
+                    <option value="35 mm. - Recessed mounted" >35 mm. - Recessed mounted</option>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="Dist_hoistway2_door_sill_TSW">Dist hoistway2-door sill (TSW):</label>
+                  <select
+                          class="form-control"
+                          name="Dist_hoistway2_door_sill_TSW"
+                          id="Dist_hoistway2_door_sill_TSW"
+                          aria-label="Default select example"
+                          disabled
+                  >
+                    <option value="115 mm. - Wall mounted" >115 mm. - Wall mounted for T2</option>
+                    <option value="75 mm " >75 mm  - Wall mounted for C2( Recessed for T2) </option>
+                    <option value="35 mm. - Recessed mounted" >35 mm. - Recessed mounted</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="Headroom_height_HSK">Headroom height HSK (min 2900):</label>
+                  <input
+                          placeholder="3600"
+                          value="3600"
+                          min="2900"
+                          max="7000"
+                          id="Headroom_height_HSK"
+                          name="Headroom_height_HSK"
+                          type="number"
+                          class="form-control"
+                          required
+                  />
+                </div>
+
+
+                <div class="col-md-4">
+                  <label for="HE19">19 stop to 20 stop distance(HE19), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE19"
+                          name="HE19"
+                          type="number"
+                          class=" form-control"
+
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE18">18 stop to 19 stop distance(HE18), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE18"
+                          name="HE18"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE17">17 stop to 18 stop distance(HE17), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE17"
+                          name="HE17"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE16">16 stop to 17 stop distance(HE16), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE16"
+                          name="HE16"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE15">15 stop to 16 stop distance(HE15), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE15"
+                          name="HE15"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE14">14 stop to 15 stop distance(HE14), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE14"
+                          name="HE14"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE13">13 stop to 14 stop distance(HE13), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE13"
+                          name="HE13"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE12">12 stop to 13 stop distance(HE12), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE12"
+                          name="HE12"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE11">11 stop to 12 stop distance(HE11), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE11"
+                          name="HE11"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE10">10 stop to 11 stop distance(HE10), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE10"
+                          name="HE10"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE9">9 stop to 10 stop distance(HE9), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE9"
+                          name="HE9"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE8">8 stop to 9 stop distance(HE8), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE8"
+                          name="HE8"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE7">7 stop to 8 stop distance(HE7), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE7"
+                          name="HE7"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE6">6 stop to 7 stop distance(HE6), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE6"
+                          name="HE6"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+
+               <div class="col-md-4">
+                  <label for="HE5">5 stop to 6 stop distance(HE5), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE5"
+                          name="HE5"
+                          type="number"
+                          class=" form-control"
+                          required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="HE4">4 stop to 5 stop distance(HE4), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE4"
+                          name="HE4"
+                          type="number"
+                          class="form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE3">3 stop to 4 stop distance(HE3), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE3"
+                          name="HE3"
+                          type="number"
+                          class="form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="HE2">2 stop to 3 stop distance(HE2), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE2"
+                          name="HE"
+                          type="number"
+                          class="form-control"
+                          required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="HE1">1 stop to 2 stop distance(HE1), mm:</label>
+                  <input
+                          onblur="findTotalHE()"
+                          placeholder="0"
+                          value="0"
+                          min="0"
+                          max="11000"
+                          step="10"
+                          id="HE1"
+                          name="HE"
+                          type="number"
+                          class="form-control"
+                          required
+                  />
+                </div>
+
+                <div class="col-md-4">
+                <label for="HSG">Well pit height HSG, mm:</label>
+                <input
+                        placeholder="1200"
+                        value="1200"
+                        min="800"
+                        max="1500"
+                        step="10"
+                        id="HSG"
+                        name="HSG"
+                        type="number"
+                        class="form-control"
+                        required
+                />
+              </div>
+
+                <div class="col-md-4">
+                  <label for="HQ">Travel height HQ, m:</label>
+                  <input
+
+                          id="HQ"
+                          name="HQ"
+                          type="number"
+                          class="form-control"
+                          required
+                  />
+                </div>
+
+
+
               </div>
               <button type="submit" value="submit" class="btn btn-primary">
                 Submit
@@ -93,12 +1663,24 @@
     >
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">
-        © 2020 Made with ❤️ By
-        <a href="https://lo-victoria.com/">Victoria Lo</a>
+        © 2022
       </div>
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <script>
+      function findTotalHE() {
+        /*const arr = document.getElementsByName('HE');*/
+        const collectionOfInputs = document.querySelectorAll(`input[name^=HE]`);
+        var tot=0;
+        for(let i=0;i<collectionOfInputs.length;i++){
+          if(parseInt(collectionOfInputs[i].value))
+            tot += parseInt(collectionOfInputs[i].value);
+        }
+        document.getElementById('HQ').value = tot/1000;
+        document.getElementById('HQ').style.borderColor = 'yellow';
+      }
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>
