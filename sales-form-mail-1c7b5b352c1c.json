@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sales-form-mail",
+  "private_key_id": "1c7b5b352c1c9010f79178c188ea224e95f50ef5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2PT7vBu95P0iL\nhMNdxjuEnrqqwSaHZi5xLROqVfM6vg8rkIzQ1veAfQ/xfufG0Jl9Tyc38u4UpATk\nWyvs/dX0eGWYwdj6SHP4KjEqDUAQZPGu+yEkK01PKubCSMImriw6PIepS7Za9gqP\n42bemTC+t3xAnxvJib4TXDGgv6O1fO8SxpM8yyVv3mBolcKAU/CURtFM1nyNAhvA\nrVdg8aFlo76scbWqAwa0/MR38Jp75kZjlW6qcbrmmOoVsXJTaCRlY/NekBaPsbFE\ndbWGY1LOxHLhnwk5VDE8u0hlDIeCHVsKV6gJEjYDNLcXDe+7mIBOsPUAeoyA1W5z\nBZbE6mJ9AgMBAAECggEAAxLnOJi9RHuIMaLrOQNIC42HgwFP286h/70y/MzHKz67\nmpsX0PRLR5gfGHjw7Qt63KBPk56YnEcES8YWPdYDPETP8TgV0j+TcIRlALtT+7gk\nKR9/GIaAHugk7R0qjy9MENhmsQ4/9L/71MpRDiCh2pmq3MaCQro8zJlMaf8e17Ji\nMZplY10qka8oOt6Db6NFwk5wDvNCdHHqFwmGqPnB/PdVqSuIEwy9DfavkUm+6KIk\nXeRqfiK/K5knSJ/TOwSqUBxRQSVZU+brtq5Vhfabb//4XsT5oFTPutMC8P4GxRhV\nXHPnZhirQAGX2jp4C0IK6J+Ucj1XeCLFHoNf8/HbSQKBgQDwXbueAFyjpsCs5h8H\nz42OBcgoZy4xuK+pLhCbT+uHhfDtKXI8RApDdSmEER1hb2NNx3EeSxfERd42NP0h\nqqTj7/OojHssZCFdER2Eq2jAKvliVPENXUw6LDFj7opokZq8/MvWWsSL3oCDEi1E\nV7GQlvnKYLD/BmYe+OA95SQMRQKBgQDCF6ihzfiu8Op2k64Q0zurRqNSBSMwv26s\newpsKyxv5SSr/lnBeu9g6cYLPT2XaPENVDn+dLe+O9Y7Hjku3VGGGj2MT3FX4l0G\nYhNN6JfJDqdBtMydtNSE9RQMuDWPLFAaXjs97apQzogyIWd3mOpaMJtDch4IkmgS\nfCKTcxHM2QKBgQC0ft6NVl46cdTLwP5aQixdEtBsLpcMtVALbdEAn/IQ0a7KmM30\nnW9LmqZzStrSOO/MD1FNWzxcoc6sy/utlVO+6ogA8ITqH8LB/UE6R/EgJOUiRwDA\ndWfxYxAvp4f94CDfe8GhlIV1Nr8wLa0aXfOzzPuEUjl3OBnldiQFtpTsNQKBgCrl\n+cKReLaJzviYWW+kkFqhyTU2p3l9xiNfKoWP4Ul19u4A0Ku/1SqxYLFZPsS5UBXn\nGM5R0867APWeD3t5NSyTnijl4iJPiMoBYUzl7K5mi7ctE9CDiDk+xcit6kCTxbye\nOS/N2Mf1bgrOcUTwylNWzOpSTasNWO1E/Itkcnm5AoGBANOyl7Q5PXxEOnzzXjXd\nVsyjYDBC6Ci0O4482siTr8OVRPrV7OIh8Ts4gh9/8575n9szwrKIK3arJHzUsPvh\nE6Iyut1AFOsbGc2nWGYOY3LzJnBuW2lVSrC7VK+AXDU4gF/t+DRTlQUhBBMPocBo\nnvu/evLv9vpNe6kjoLnnYmnS\n-----END PRIVATE KEY-----\n",
+  "client_email": "sales-form-mail@sales-form-mail.iam.gserviceaccount.com",
+  "client_id": "116054962641714824937",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sales-form-mail%40sales-form-mail.iam.gserviceaccount.com"
+}
