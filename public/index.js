@@ -12,8 +12,11 @@ const sendMail = (mail) => {
  fetch("https://nodemailer-vic-lo.herokuapp.com/send", {
  для localhost:
   fetch("http://localhost:5000/send", {
+  для google cloud:
+  fetch("send", {
+
   */
-  fetch("https://sales-form-mail.lm.r.appspot.com/send", {
+  fetch("/send", {
     method: "post",
     body: mail,
   }).then((response) => {
