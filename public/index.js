@@ -7,8 +7,13 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const sendMail = (mail) => {
- /* fetch("https://nodemailer-vic-lo.herokuapp.com/send", {*/
+
+ /* для herokuapp:
+ fetch("https://nodemailer-vic-lo.herokuapp.com/send", {
+ для localhost:
   fetch("http://localhost:5000/send", {
+  */
+  fetch("https://sales-form-mail.lm.r.appspot.com/send", {
     method: "post",
     body: mail,
   }).then((response) => {
