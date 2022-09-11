@@ -8,14 +8,6 @@ const formEvent = form.addEventListener("submit", (event) => {
 
 const sendMail = (mail) => {
 
- /* для herokuapp:
- fetch("https://nodemailer-vic-lo.herokuapp.com/send", {
- для localhost:
-  fetch("http://localhost:5000/send", {
-  для google cloud:
-  fetch("send", {
-
-  */
   fetch("/send", {
     method: "post",
     body: mail,
@@ -24,10 +16,6 @@ const sendMail = (mail) => {
   });
 };
 window.onload = ()=>{changing_model()}
-
-
-
-
 
 let Product=document.getElementById("Product")
 let Number_of_stops_ZE=document.getElementById("Number_of_stops_ZE")
